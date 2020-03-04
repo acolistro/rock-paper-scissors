@@ -6,6 +6,7 @@ namespace RPS.Tests
   [TestClass]
   public class GameTests
   {
-    //test methods
+    [TestMethod]
+    
   }
 }
