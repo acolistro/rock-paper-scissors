@@ -4,11 +4,14 @@ namespace RPS.Models
 {
   public class Game
   {
-    public static string DetermineWinner(string p1Move, string p2Move)
+    public static string DetermineWinner(string p1Move, string p2Move, string players)
     {
       if((p1Move == "Rock" && p2Move == "Scissors") || (p1Move == "Scissors" && p2Move == "Paper") || (p1Move == "Paper" && p2Move == "Rock"))
       {
         return "Player 1";
+      } else if(((p2Move == "Rock" && p1Move == "Scissors") || (p2Move == "Scissors" && p1Move == "Paper") || (p2Move == "Paper" && p1Move == "Rock")) && players == "1")
+      {
+        return "Computer";
       } else if((p2Move == "Rock" && p1Move == "Scissors") || (p2Move == "Scissors" && p1Move == "Paper") || (p2Move == "Paper" && p1Move == "Rock"))
       {
         return "Player 2";
