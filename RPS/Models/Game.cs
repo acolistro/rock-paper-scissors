@@ -19,7 +19,7 @@ namespace RPS.Models
       }
       else
       {
-        return "Error";
+        throw new System.InvalidOperationException("Error Incorrect Input");
       }
     }
 

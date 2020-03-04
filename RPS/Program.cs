@@ -7,7 +7,7 @@ public class Program
   {
     Console.WriteLine("Welcome to Rock, Paper, Scissors\n-------------------\nPlayer 1, what is your choice? (No peaking p2)");
     string player1Choice = Console.ReadLine();
-    Console.WriteLine("Player 2, what is your choice? (No peaking p2)");
+    Console.WriteLine("Player 2, what is your choice? (No peaking p1)");
     string player2Choice = Console.ReadLine();
     try
     {
