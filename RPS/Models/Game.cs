@@ -13,10 +13,33 @@ namespace RPS.Models
       {
         return "Player 2";
       }
-      else
+      else if(p1Move == p2Move)
       {
         return "Draw";
       }
+      else
+      {
+        return "Error";
+      }
+    }
+
+    public static string ComputerMove()
+    {
+      Random rnd = new Random();
+      int randomMove = rnd.Next(0,3);
+      if(randomMove == 0)
+      {
+        return "Rock";
+      }
+      else if(randomMove == 1)
+      {
+        return "Paper";
+      }
+      else if(randomMove == 2)
+      {
+        return "Scissors";
+      }
+      else return "error";
     }
   }
 }
