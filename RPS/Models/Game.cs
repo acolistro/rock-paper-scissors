@@ -2,7 +2,7 @@ using System;
 
 namespace RPS.Models
 {
-  public class Game
+  abstract class Game
   {
     public static string DetermineWinner(string p1Move, string p2Move, string players)
     {
