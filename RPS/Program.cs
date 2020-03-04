@@ -13,9 +13,9 @@ public class Program
     {
       Console.WriteLine($"Winner is: {Game.DetermineWinner(player1Choice, player2Choice)}");
     }
-    catch
+    catch (Exception ex)
     {
-      Console.WriteLine("Error in user input");
+      Console.WriteLine(ex.Message);
     }
   }
 }
